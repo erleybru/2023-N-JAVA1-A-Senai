@@ -1,0 +1,11 @@
+public class Main{
+   public static void main(String[] args) {
+     for(char ch = Character.MIN_VALUE;ch<Character.MAX_VALUE;ch++){
+       if(Character.SPACE_SEPARATOR == Character.getType(ch)){
+         //from ww  w.jav a 2  s  .  c  o m
+         String s = String.format ("\\u%04x", (int)ch);
+         System.out.println(s);
+       }
+     }
+   }
+}
